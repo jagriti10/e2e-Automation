@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.progress.telerik.reporting.RepotingCore">
+      <class name="com.codProg.web.tests.dashboard.HomePageTests">
         <methods>
-          <include name="reportSetup"/>
+          <include name="testHomePageContents"/>
+          <include name="tearDownDriver"/>
+          <include name="generateExtentReports"/>
+          <include name="setup"/>
+          <include name="initialiseExtentReports"/>
         </methods>
-      </class> <!-- com.progress.telerik.reporting.RepotingCore -->
+      </class> <!-- com.codProg.web.tests.dashboard.HomePageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
